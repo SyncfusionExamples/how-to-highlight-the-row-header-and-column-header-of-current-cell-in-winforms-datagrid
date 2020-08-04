@@ -2,7 +2,7 @@
 
 ## About the sample
 
-This sample illustrates how to to highlight the Row header and Column Header of Current Cell in WinForms DataGrid.
+This sample illustrates how to highlight the Row header and Column Header of Current Cell in WinForms DataGrid.
 
 You can highlight the column header and row header of the current cell in the SfDataGrid by creating custom renderer for the column header and row header respectively as shown in the following code example.
 
