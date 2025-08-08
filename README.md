@@ -1,10 +1,10 @@
-# How to highlight the Row header and Column Header of Current Cell in WinForms DataGrid (SfDataGrid)?
+# How to highlight the Row header and Column Header of Current Cell in WinForms DataGrid?
 
 ## About the sample
 
 This sample illustrates how to highlight the Row header and Column Header of Current Cell in WinForms DataGrid.
 
-By default in SfDataGrid, the column and row header of the current cell will not be highlighted. You can highlight the column and row header by creating custom renderer for the column header and row header derived from GridHeaderCellRenderer and GridRowHeaderCellRenderer.
+By default in [WinForms DataGrid](https://www.syncfusion.com/winforms-ui-controls/datagrid) SfDataGrid, the column and row header of the current cell will not be highlighted. You can highlight the column and row header by creating custom renderer for the column header and row header derived from [GridHeaderCellRenderer](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.DataGrid.Renderers.GridHeaderCellRenderer.html) and [GridRowHeaderCellRenderer](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.DataGrid.Renderers.GridRowHeaderCellRenderer.html).
 
 ```c#
 public partial class Form1 : Form
@@ -16,11 +16,9 @@ public partial class Form1 : Form
     {
         InitializeComponent();
         sfDataGrid1.DataSource = new OrderInfoCollection().OrdersListDetails;
-
         sfDataGrid1.CellRenderers["Header"] = new CustomHeaderCellRenderer(this.sfDataGrid1);
         sfDataGrid1.CellRenderers["RowHeader"] = new CustomRowHeaderCellRenderer(this.sfDataGrid1);
         sfDataGrid1.CurrentCellActivated += SfDataGrid1_CurrentCellActivated;
-
     }
 
     private void SfDataGrid1_CurrentCellActivated(object sender, Syncfusion.WinForms.DataGrid.Events.CurrentCellActivatedEventArgs e)
