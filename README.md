@@ -30,10 +30,12 @@ public partial class Form1 : Form
 public class CustomHeaderCellRenderer : GridHeaderCellRenderer
 {
     SfDataGrid DataGrid { get; set; }
+
     public CustomHeaderCellRenderer(SfDataGrid DataGrid)
     {
         this.DataGrid = DataGrid;
     }
+
     protected override void OnRender(Graphics paint, Rectangle cellRect, string cellValue, CellStyleInfo style, DataColumnBase column, RowColumnIndex rowColumnIndex)
     {
         if (rowColumnIndex.ColumnIndex == DataGrid.CurrentCell.ColumnIndex)
@@ -53,10 +55,12 @@ public class CustomHeaderCellRenderer : GridHeaderCellRenderer
 public class CustomRowHeaderCellRenderer : GridRowHeaderCellRenderer
 {
     SfDataGrid DataGrid { get; set; }
+
     public CustomRowHeaderCellRenderer(SfDataGrid DataGrid)
     {
         this.DataGrid = DataGrid;
     }
+
     protected override void OnRender(Graphics paint, Rectangle cellRect, string cellValue, CellStyleInfo style, DataColumnBase column, RowColumnIndex rowColumnIndex)
     {
         if (rowColumnIndex.RowIndex == DataGrid.CurrentCell.RowIndex)
