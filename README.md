@@ -1,10 +1,8 @@
-# How to highlight the Row header and Column Header of Current Cell in WinForms DataGrid?
+# How to Highlight the Row header and Column Header of Current Cell in WinForms DataGrid?
 
-## About the sample
+This sample illustrates how to highlight the Row header and Column Header of Current Cell in [WinForms DataGrid](https://www.syncfusion.com/winforms-ui-controls/datagrid) (SfDataGrid).
 
-This sample illustrates how to highlight the Row header and Column Header of Current Cell in WinForms DataGrid.
-
-By default in [WinForms DataGrid](https://www.syncfusion.com/winforms-ui-controls/datagrid) SfDataGrid, the column and row header of the current cell will not be highlighted. You can highlight the column and row header by creating custom renderer for the column header and row header derived from [GridHeaderCellRenderer](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.DataGrid.Renderers.GridHeaderCellRenderer.html) and [GridRowHeaderCellRenderer](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.DataGrid.Renderers.GridRowHeaderCellRenderer.html).
+By default in `DataGrid`, the column and row header of the current cell will not be highlighted. You can highlight the column and row header by creating custom renderer for the column header and row header derived from [GridHeaderCellRenderer](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.DataGrid.Renderers.GridHeaderCellRenderer.html) and [GridRowHeaderCellRenderer](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.DataGrid.Renderers.GridRowHeaderCellRenderer.html).
 
 ```c#
 public partial class Form1 : Form
@@ -72,7 +70,4 @@ public class CustomRowHeaderCellRenderer : GridRowHeaderCellRenderer
 }
 ```
 
-![Highlight Column and Row Header of current cell](image.png)
-
-## Requirements to run the demo
-Visual Studio 2015 and above versions
+![Highlight Column and Row Header of current cell](HighlightedColumnHeader.png)
